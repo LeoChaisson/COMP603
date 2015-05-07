@@ -27,7 +27,7 @@ What is a language (in terms of sets and sequences)?
 
 
 What is a compiler? Name some.
-
+A compiler assembles all the code you feed into it and makes it readable by thre machine
 
 What is an interpreter? How does that differ from a compiler?
 
@@ -57,4 +57,4 @@ Name some optimizations.
 
 
 What questions do you have for me?
-
+I don't know a lot of these questons... am I gonna fail this class?
