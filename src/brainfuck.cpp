@@ -25,6 +25,7 @@ typedef enum {
     SHIFT_RIGHT, // >
     INPUT, // ,
     OUTPUT // .
+	ZERO // 0 
 } Command;
 
 // Forward references. Silly C++!
@@ -59,6 +60,7 @@ class CommandNode : public Node {
     public:
         Command command;
         CommandNode(char c) {
+			int counter;
             switch(c) {
                 case '+': command = INCREMENT; break;
                 case '-': command = DECREMENT; break;
@@ -66,6 +68,7 @@ class CommandNode : public Node {
                 case '>': command = SHIFT_RIGHT; break;
                 case ',': command = INPUT; break;
                 case '.': command = OUTPUT; break;
+				case '0': command = ZERO; break;
             }
         }
         void accept (Visitor * v) {
